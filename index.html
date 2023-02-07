@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Webpage</title>
+    <style>
+      /* MULTI LINE CSS COMMENT
+
+       PRIMARY:
+       SECONDARY:
+       ACCENT 1:
+       ACCENT 2:
+      
+       */
+      .header {
+        /* background-color: aqua; */
+        /* vh means viewport height*/
+
+        height: 80vh;
+      }
+      .header__nav--links {
+        text-decoration: none;
+        color: #ffbd14;
+      }
+    </style>
+  </head>
+
+  <body
+    style="
+      background-color: #073146;
+      color: #ffbd14;
+      padding: 0% 15% 0%;
+      text-align: left;
+    "
+  >
+    <!-- *************************************HERO / HEADER SECTION************************************* -->
+
+    <header>
+      <div class="header" style="color: #ffbd14">
+        <!-- *****NAVIGATION***** -->
+        <div class="logo">
+          <img
+            src="https://github.com/KodeGo-Bootcamp/HTML-Activity-Images/blob/main/Coder2023.png?raw=true"
+            alt="logo"
+            width="60"
+            style="border-radius: 50%"
+          />
+        </div>
+
+        <div
+          class="navigation"
+          style="height: 50px; width: 80%; position: fixed"
+        >
+          <ul style="list-style-type: none">
+            <li style="float: left; padding-left: 5%">
+              <a class="header__nav--links" href="#">Home</a>
+            </li>
+            <li style="float: left; margin-left: 15%">
+              <a class="header__nav--links" href="#About">About</a>
+            </li>
+            <li style="float: left; margin-left: 15%">
+              <a class="header__nav--links" href="#skills">Skills</a>
+            </li>
+            <li style="float: left; margin-left: 15%">
+              <a class="header__nav--links" href="#blog">Blogs</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <hr style="border: 1px solid red;"> -->
+        <br />
+        <h1>
+          Hi! This is my First Web Page,<span style="color: #ffc93c">
+            I am Jep.</span
+          >
+        </h1>
+        <p style="text-shadow: 0px -5px black">
+          Let me help you build your <strong> visual stories.</strong>
+        </p>
+        <figure>
+          <img
+            src="pp.jpg"
+            alt="This is a picture of myself."
+            height="200"
+            width="200"
+            style="border-radius: 50%"
+          />
+          <figcaption>Freelance Web Developer</figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <!-- *************************************MAIN SECTION************************************* -->
+
+    <main>
+      <!-- *************************************ABOUT SECTION************************************* -->
+      <hr style="border: 1px solid red" />
+      <section>
+        <div id="About" style="height: 50vh">
+          <h2>About Me</h2>
+          <p>
+            Hello, my name is Jeffrey Cawagas and I am an IT graduate with
+            basic knowledge about web development. I am eager to learn and grow
+            my skills in this field. My goal is to become a full-stack web
+            developer and contribute to building innovative and user-friendly
+            websites. I am confident that my passion for technology and my
+            commitment to continuous learning will help me achieve my career
+            aspirations.
+          </p>
+
+          <p>My hobbies are the following:</p>
+          <ul>
+            <li>Biking</li>
+            <li>Swimming</li>
+            <li>Coding</li>
+            <li>Eating</li>
+            <li>Lorem, ipsum.</li>
+          </ul>
+        </div>
+      </section>
+      <!-- *************************************SKILL SECTION************************************* -->
+      <hr style="border: 1px solid red" />
+      <section>
+        <div id="skills" style="height: 50vh">
+          <h2>Skills</h2>
+          <ol type="I">
+            <li>Html</li>
+            <li>Css</li>
+            <li>Bootstrap</li>
+            <li>JavaScript</li>
+            <li>ReactJs</li>
+            <li>Web Developer</li>
+            <li>FrontEnd Web Developer</li>
+            <li>BackEnd Web Developer</li>
+          </ol>
+        </div>
+      </section>
+      <!-- *************************************BLOG POST SECTION************************************* -->
+      <hr style="border: 1px solid red" />
+      <div id="blog">
+        <h2>Blogs Post</h2>
+        <a style="text-decoration: none; color: #ffbd14" href="#"
+          >What is the difference between front-end and back-end development?</a
+        ><br />
+        <a style="text-decoration: none; color: #ffbd14" href="#"
+          >What is the difference between front-end and back-end development?</a
+        ><br />
+        <a style="text-decoration: none; color: #ffbd14" href="#"
+          >What is the difference between front-end and back-end development?</a
+        ><br />
+        <a style="text-decoration: none; color: #ffbd14" href="#"
+          >What is the difference between front-end and back-end development?</a
+        ><br />
+        <a style="text-decoration: none; color: #ffbd14" href="#"
+          >What is the difference between front-end and back-end development?</a
+        ><br />
+        <a style="text-decoration: none; color: #ffbd14" href="#"
+          >What is the difference between front-end and back-end development?</a
+        ><br />
+      </div>
+    </main>
+
+    <!-- ************************************FORM SECTION************************************* -->
+    <section>
+      <div id="form" style="height: 20vh">
+        <h2>FORM</h2>
+        <form action="#" method="#">
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            placeholder="Enter your Full Name"
+            name="full_name"
+            id="name"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            placeholder="Enter your email:"
+            name="email"
+            id="email"
+          />
+
+          <input type="submit" value="SEND" name="" id="" />
+        </form>
+      </div>
+    </section>
+
+    <!-- ************************************FOOTER SECTION************************************* -->
+    <hr width="50%" align="left" color="red" />
+    <footer style="background-color: #184d67;">
+      <p>Copyright © 2023 Aldrien Allanigue</p>
+    </footer>
+  </body>
+</html>
+
+<!-- 
+        Four Cases for Naming in Programming:
+        
+        snake_case
+        kebeb-case
+        camelCase
+        PascalCase
+
+     -->
+
+<!-- 
+    <hr width="70%">
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Iure, nostrum molestias. Aliquid reiciendis itaque quis aut enim. 
+        Ipsa, deleniti aut? Iusto eligendi repellat possimus,
+        exercitationem quo pariatur? Quibusdam, culpa facilis.
+    </p> -->
+
+<!-- <div class="img">
+      <h3>Inseting image</h3>
+      
+    </div> -->
+
+<!-- <div class="main">
+        <div>
+          <h2>Coding Heading 2</h2>
+        </div>
+        <div>
+          <h3>Coding Heading 3</h3>
+          <h4>Coding Heading 4</h4>
+        </div>
+      </div> -->
+
+<!-- <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6> -->
+
+<!-- <p>
+            I am an avid biker who loves to explore new trails and push my
+            limits on two wheels. Biking is not just a hobby for me, it's a
+            lifestyle that helps me stay fit and healthy while also providing me
+            with a sense of freedom and adventure.
+          </p> -->
